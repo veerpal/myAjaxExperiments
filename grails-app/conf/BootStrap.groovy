@@ -1,0 +1,62 @@
+import ajaxcities.City
+class BootStrap {
+
+    def init = { servletContext ->
+		  log.info "Loading cities in US"
+		  if(!City.findByCity('Birmingham')) new City(city:'Birmingham').save()
+		  if(!City.findByCity('Anchorage')) new City(city:'Anchorage').save()
+		  if(!City.findByCity('Phoenix')) new City(city:'Phoenix').save()
+		  if(!City.findByCity('Little Rock')) new City(city:'Little Rock').save()
+		  if(!City.findByCity('Los Angeles')) new City(city:'Los Angeles').save()
+		  if(!City.findByCity('Denver')) new City(city:'Denver').save()
+		  if(!City.findByCity('Bridgeport')) new City(city:'Bridgeport').save()
+		  if(!City.findByCity('Wilmington')) new City(city:'Wilmington').save()
+		  if(!City.findByCity('Jacksonville')) new City(city:'Jacksonville').save()
+		  if(!City.findByCity('Atlanta')) new City(city:'Atlanta').save()
+		  if(!City.findByCity('Honolulu')) new City(city:'Honolulu').save()
+		  if(!City.findByCity('Boise')) new City(city:'Boise').save()
+		  if(!City.findByCity('Chicago')) new City(city:'Chicago').save()
+		  if(!City.findByCity('Indianapolis')) new City(city:'Indianapolis').save()
+		  if(!City.findByCity('Des Moines')) new City(city:'Des Moines').save()
+		  if(!City.findByCity('Wichita')) new City(city:'Wichita').save()
+		  if(!City.findByCity('Louisville')) new City(city:'Louisville').save()
+		  if(!City.findByCity('New Orleans')) new City(city:'New Orleans').save()
+		  if(!City.findByCity('Portland')) new City(city:'Portland').save()
+		  if(!City.findByCity('Baltimore')) new City(city:'Baltimore').save()
+		  if(!City.findByCity('Boston')) new City(city:'Boston').save()
+		  if(!City.findByCity('Detroit')) new City(city:'Detroit').save()
+		  if(!City.findByCity('Minneapolis')) new City(city:'Minneapolis').save()
+		  if(!City.findByCity('Jackson')) new City(city:'Jackson').save()
+		  if(!City.findByCity('Kansas City')) new City(city:'Kansas City').save()
+		  if(!City.findByCity('Billings')) new City(city:'Billings').save()
+		  if(!City.findByCity('Omaha')) new City(city:'Omaha').save()
+		  if(!City.findByCity('Las Vegas')) new City(city:'Las Vegas').save()
+		  if(!City.findByCity('Manchester')) new City(city:'Manchester').save()
+		  if(!City.findByCity('Newark')) new City(city:'Newark').save()
+		  if(!City.findByCity('Albuquerque')) new City(city:'Albuquerque').save()
+		  if(!City.findByCity('New York')) new City(city:'New York').save()
+		  if(!City.findByCity('Charlotte')) new City(city:'Charlotte').save()
+		  if(!City.findByCity('Fargo')) new City(city:'Fargo').save()
+		  if(!City.findByCity('Columbus')) new City(city:'Columbus').save()
+		  if(!City.findByCity('Oklahoma City')) new City(city:'Oklahoma City').save()
+		  if(!City.findByCity('Portland')) new City(city:'Portland').save()
+		  if(!City.findByCity('Philadelphia')) new City(city:'Philadelphia').save()
+		  if(!City.findByCity('San Juan')) new City(city:'San Juan').save()
+		  if(!City.findByCity('Providence')) new City(city:'Providence').save()
+		  if(!City.findByCity('Columbia')) new City(city:'Columbia').save()
+		  if(!City.findByCity('Sioux Falls')) new City(city:'Sioux Falls').save()
+		  if(!City.findByCity('Memphis')) new City(city:'Memphis').save()
+		  if(!City.findByCity('Houston')) new City(city:'Houston').save()
+		  if(!City.findByCity('Salt Lake City')) new City(city:'Salt Lake City').save()
+		  if(!City.findByCity('Burlington')) new City(city:'Burlington').save()
+		  if(!City.findByCity('Virginia Beach')) new City(city:'Virginia Beach').save()
+		  if(!City.findByCity('Seattle')) new City(city:'Seattle').save()
+		  if(!City.findByCity('Charleston')) new City(city:'Charleston').save()
+		  if(!City.findByCity('Milwaukee')) new City(city:'Milwaukee').save()
+		  if(!City.findByCity('Cheyenne')) new City(city:'Cheyenne').save(flush:true)  
+		  log.info "Completed loading Cities in US"
+		  
+	}
+    def destroy = {
+    }
+}
